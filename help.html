@@ -40,6 +40,7 @@ color:#3F51B5;
 width:25%;
 margin-top:10px;
 border-radius:6px;
+cursor:pointer;
 }
 
 .tip{
@@ -48,6 +49,27 @@ padding:10px;
 border-left:4px solid #3F51B5;
 margin-top:10px;
 font-size:14px;
+}
+
+/* 图片放大层 /
+#imgModal{
+display:none;
+position:fixed;
+z-index:999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+align-items:center;
+justify-content:center;
+}
+
+/ 放大后的图片 /
+#imgModal img{
+max-width:95%;
+max-height:95%;
+border-radius:8px;
 }
 
 </style>
@@ -86,11 +108,11 @@ To ensure the app lock works properly, please grant the required permissions suc
 Accessibility Service and Overlay Permission.
 </p>
 
-<img src="images/step2.png" alt="Step 2 Screenshot">
-<img src="images/step2_2.png" alt="Step 2 Screenshot">
-<img src="images/step2_3.png" alt="Step 2 Screenshot">
-<img src="images/step2_4.png" alt="Step 2 Screenshot">
-<img src="images/step2_5.png" alt="Step 2 Screenshot">
+<img src="images/step2.png">
+<img src="images/step2_2.png">
+<img src="images/step2_3.png">
+<img src="images/step2_4.png">
+<img src="images/step2_5.png">
 
 </div>
 
@@ -104,7 +126,7 @@ Open the app list and select the applications you want to protect.
 Once selected, these apps will require your password before opening.
 </p>
 
-<img src="images/step3.png" alt="Step 3 Screenshot">
+<img src="images/step3.png">
 
 </div>
 
@@ -117,13 +139,35 @@ Once everything is set up, your selected applications will be protected.
 Whenever someone tries to open them, they must enter the correct password.
 </p>
 
-<img src="images/step4.png" alt="Step 4 Screenshot">
+<img src="images/step4.png">
 
 <div class="tip">
 You can change your password anytime in the settings page.
 </div>
 
 </div>
+
+<!-- 图片放大容器 -->
+<div id="imgModal">
+<img id="modalImg">
+</div>
+
+<script>
+
+/ 自动给所有图片添加点击放大 /
+document.querySelectorAll(".step img").forEach(img=>{
+img.onclick=function(){
+document.getElementById("imgModal").style.display="flex";
+document.getElementById("modalImg").src=this.src;
+}
+})
+
+/ 点击背景关闭 */
+document.getElementById("imgModal").onclick=function(){
+this.style.display="none";
+}
+
+</script>
 
 </body>
 </html>
