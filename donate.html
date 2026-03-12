@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support the Developer</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 8px;
+        color: #ff5722;
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .qr-container {
+        width: 200px;
+        height: 200px;
+        border: 2px dashed #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #fff;
+    }
+
+    .qr-container img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .buttons button {
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .buttons button:hover {
+        background-color: #e64a19;
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #888;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>Support the Developer ❤️</h1>
+<p>If you enjoy this app, you can support the developer. Your support helps keep the app updated and ad-free.</p>
+
+<div class="qr-container">
+    <!-- 替换下面 src 为你的二维码图片 -->
+    <img src="qr-placeholder.png" alt="Scan QR to Support">
+</div>
+
+<div class="buttons">
+    <button onclick="alert('Thanks for supporting! $1 Coffee')">☕ Buy me a coffee - $1</button>
+    <button onclick="alert('Thanks for supporting! $3 Beer')">🍺 Buy me a beer - $3</button>
+    <button onclick="alert('Thanks for supporting! $5 Pizza')">🍕 Buy me a pizza - $5</button>
+    <button onclick="alert('Thanks for supporting! $10 Big Support')">🚀 Big Support - $10</button>
+</div>
+
+<div class="footer">
+    Thank you for supporting ❤️
+</div>
+
+</body>
+</html>
