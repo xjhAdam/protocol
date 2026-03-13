@@ -3,5 +3,5 @@
   "donate": "1",
   "versionCode": 2,
   "updateMsg": "发现新版的APP,为了您更好的体验服务，建议您进行更新升级",
-  "forced_update":"1"
+  "forced_update":"-1"
 }
