@@ -1,5 +1,5 @@
 {
-  "ad_enable": "1",
+  "ad_enable": "-1",
   "supportType":"ad",
   "versionCode": 1,
   "updateMsg": "发现新版的APP,为了您更好的体验服务，建议您进行更新升级",
