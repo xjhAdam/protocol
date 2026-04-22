@@ -5,6 +5,7 @@
   "updateMsg": "新版APP,添加指纹解锁功能,为了您更好的体验服务，建议您进行更新升级",
   "forced_update":"-1",
   "onlineLog":1,
+  "cool_down_time":2000,
   "nativeAdId":"",
   "bannerAdId":"",
   "interstitialAdId":""
