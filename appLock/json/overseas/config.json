@@ -2,7 +2,7 @@
   "ad_enable": "1",
   "supportType":"ad",
   "versionCode": 1015,
-  "updateMsg": "发现新版的APP,为了您更好的体验服务，建议您进行更新升级",
+  "updateMsg": "To enable fingerprint unlock and improve your experience, please update the app.",
   "forced_update":"-1",
   "onlineLog":1,
   "cool_down_time":-1,
