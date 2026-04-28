@@ -4,7 +4,7 @@
   "versionCode": 1015,
   "updateMsg": "To enable fingerprint unlock and improve your experience, please update the app.",
   "forced_update":"-1",
-  "onlineLog":1,
+  "onlineLog":-1,
   "cool_down_time":-1,
   "nativeAdId":"",
   "bannerAdId":"",
