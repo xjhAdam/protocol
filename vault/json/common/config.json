@@ -9,5 +9,6 @@
   "nativeAdId":"",
   "bannerAdId":"",
   "interstitialAdId":"",
-  "swingAdState":"native"
+  "swingAdState":"native",
+  "bgIntersAdFrequency":3
 }
